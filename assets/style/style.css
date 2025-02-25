@@ -1,0 +1,412 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+   text-decoration: none;
+}
+
+.container{
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* header */
+
+.nav{
+    padding: 50px 0;
+}
+
+.nav__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo{
+    display: flex;
+    gap: 10px;
+}
+
+.logo__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo__text span{
+    max-width: 160px;
+    font-family: 'Arial';
+    font-size: 30px;
+    color: black;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+
+.logo__text p{
+    font-family: 'Arail';
+    font-size: 15px;
+    font-weight: 700;
+    color: gray;
+    text-transform: uppercase;
+    max-width: 200px;
+    text-align: left;
+        
+}
+
+.nav__list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nav__list-link{
+    font-family: 'Arial';
+    font-size: 25px;
+    font-weight: 700;
+    color: gray;
+    text-transform: uppercase;
+       position: relative;
+       transition: .4s;
+}
+
+.nav__list-link:hover{
+    color:  teal;
+   
+}
+
+.nav__list-link::before{
+    content: '';
+    position: absolute;
+    width: 220px;
+    height: 2px;
+    background: gray;
+    opacity: .6;
+    bottom: 0;
+   transition: .4s;
+}
+    
+.nav__list-link:hover::before{
+   opacity: 1;
+}
+
+.nav__list-contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.number__link{
+    margin-bottom: 20px;
+}
+
+.nav__list-contacts-link.number{
+    font-family: 'Arial';
+    font-size: 30px;
+    font-weight: 800;
+    color:  teal;
+}
+
+.nav__list-contacts-link{
+    font-family: 'Arial';
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+}
+
+
+.nav__list-contacts-link span{
+    color:  teal;
+text-decoration: underline;
+}
+
+.nav__list-contacts-link-btn{
+    background:  teal;
+    font-family: 'Arial';
+    font-size: 20   px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    padding: 15px 50px;
+}
+
+.btn__link{
+    margin-top: 25px;
+}
+
+.services__content{
+    display: flex;
+}
+
+.services__content span{
+    position: relative;
+}
+
+.services__content span::before{
+        content: '';
+        position: absolute;
+        width: 400px;
+        height: 10px;
+        background: #333333;
+        top: -10px;
+        left: 100px;
+    }
+
+
+.sec1{
+    background: #009999;
+    max-width: 800px;
+}
+
+
+.sec1__text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 70px 150px 70px 100px;
+}
+
+.sec1__text h1{
+    font-family: 'Arial';
+    font-size: 60px;
+    font-weight: 800;
+    color: white;
+}
+
+.sec1__text h2{
+   width: 100%;
+   max-width: 500px;
+    font-family: 'Arial';
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+}
+
+
+.sec2 {
+   position: absolute;
+   right: 120px;
+   bottom:-2px ;
+}
+
+.sec2 img{
+    width: 600px;
+    height: 350px;
+}
+
+/* section detals */
+
+.details__cards{
+    display: flex;
+ 
+}
+
+.details__cards-item-insights{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 60px 100px;
+    max-width: 500px;
+    gap: 20px;
+}
+
+.details__cards-item-insights h3{
+    font-family: 'Arial';
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+}
+
+.details__cards-item-company{
+    background: teal;
+    padding: 100px 100px 100px 50px;
+}
+
+.details__cards-item-insights p{
+    max-width: 190px;
+    font-family: 'Arial';
+    font-size: 13px;
+    font-weight: 400;
+    color: black;
+   text-decoration: underline;
+}
+
+.details__cards-item-company h3{
+    font-family: 'Arial';
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    max-width: 150px;
+}
+
+.details__cards-item-local{
+    background: #656565;
+    padding: 100px 100px 100px 30px;
+}
+
+.details__cards-item-local h3{
+    font-family: 'Arial';
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    max-width: 170px;
+}
+
+.details__cards-item-accounting{
+    background: teal;
+    padding: 100px 325px 100px 40px;
+}
+
+.details__cards-item-accounting h3{
+    font-family: 'Arial';
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    max-width: 170px;
+}
+
+/* section details-2 */
+
+.details-2{
+    background: #2f3434;
+}
+
+.details-2__content{
+    display: flex;
+    margin-left: 387px;
+}
+
+.details__cards-item-bank{
+    background: #656565;
+    padding: 100px 100px 100px 30px;
+}
+
+.details__cards-item-bank h3{
+    font-family: 'Arial';
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    max-width: 170px;
+}
+
+.details__cards-item-lecensing{
+    background: teal;
+    padding: 100px 150px 100px 30px;
+}
+
+.details__cards-item-lecensing h3{
+    font-family: 'Arial';
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    
+}
+
+.details__cards-item-brands{
+    background: transparent;
+    padding: 100px 40px;
+}
+
+.details__cards-item-brands h3{
+    font-family: 'Arial';
+    font-size: 20px;
+    font-weight: 700;
+    color: #c8c8c8;
+    text-transform: uppercase;
+    
+}
+
+/* footer */
+
+.footer{
+    padding: 100px 0;
+    background: #2f3434;
+}
+
+.footer__content{
+    display: flex;
+    justify-content: space-between;
+    align-items:start;
+}
+
+
+
+.footer__list-rights{
+    display: flex;
+    flex-direction: column;
+   gap: 5px;
+}
+
+.footer__list-rights p{
+    color: #cccccc;
+    font-size: 13px;
+}
+
+.footer__list-link{
+text-decoration: underline;
+color: #cccccc;
+}
+
+
+.footer__list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer__column{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.footer__column h3{
+    color: white;
+    text-transform: uppercase;
+}
+
+.footer__list p{
+color: #cccccc;
+font-size: 13px;
+}
+.footer__column-1{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+}
+
+.footer__column-1::before{
+    content: '';
+    position: absolute;
+    width: 780px;
+    height: 10px;
+    background: white;
+    bottom: -277px;
+    left: -900px;
+    
+}
+
+.footer__column-1 h3{
+    color: white;
+    text-transform: uppercase;
+}
+
+ 
+

@@ -227,7 +227,11 @@
  .nav__list-link{
         font-size: 13px;
     }
-
+   
+    .nav__list{
+        flex-direction: column;
+        gap: 20px;
+    }
     
     .nav__list-link::before{
         width: 80px;
@@ -255,7 +259,7 @@
 
        .sec2{
         z-index: 1000;
-        bottom: -650px ;
+        bottom: -700px ;
        }
 
        .details__cards-item-insights{
@@ -269,20 +273,21 @@
 
        .cards-bank-lecensing{
         display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-left: 120px;
+        gap: 10px;
        }
 
-       .details__cards-item-lecensing{
-        padding: 100px  132px 80px 30px;
-       }
 
        .details__cards-item-brands{
         text-align: center;
-        padding: 70px;
+        margin-left: 100px;
        }
 
         .footer__content{
         display: flex;
-        flex-direction: column;
+       flex-direction: column;
         align-items: center;
        gap: 50px;
     }
@@ -325,7 +330,7 @@
 
        .services__content span::before{
        width: 240px;
-        left: 35px;      
+        left: 25px;      
        }
 
        .nav__list-contacts{
@@ -346,7 +351,7 @@
        }
 
        .sec1__text h1{
-        font-size: 40px;
+        font-size: 35px;
        }
 
        .sec2{
@@ -359,14 +364,21 @@
        }
        .cards-bank-lecensing{
         flex-direction: column;
+        margin-left: 10px;
+       }
+
+       .details__cards-item-bank{
+        max-width: 260px;
        }
 
        .details__cards-item-lecensing{
-        padding: 100px  161px 80px 30px;
+        max-width: 260px;
+        padding: 100px  10px 80px 10px;
        }
        .details__cards-item-brands{
+        width: 100%;
         text-align: left;
-        padding: 70px 10px 70px 10px;
+        padding: 70px 10px 70px 100px;
        }
 
        .footer__column-1::before{
